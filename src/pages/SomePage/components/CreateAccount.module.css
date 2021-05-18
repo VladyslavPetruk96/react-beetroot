@@ -1,0 +1,12 @@
+.login_block {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}

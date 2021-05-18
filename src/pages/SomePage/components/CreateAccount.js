@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import firebase from 'firebase';
-import style from './App.module.css';
+import style from './CreateAccount.module.css';
 
 
 const firebaseConfig = {
@@ -15,7 +15,7 @@ const firebaseConfig = {
   
   firebase.initializeApp(firebaseConfig);
 
-class App extends Component {
+class CreateAccount extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -116,4 +116,4 @@ class App extends Component {
 
 }
 
-export default App
+export default CreateAccount

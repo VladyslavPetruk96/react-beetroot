@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import s from './MainPage.module.css';
-import Navlist from '../header/NavList';
+import Navlist from '../components/NavList';
 
 class MainPage extends Component {
   render() {
