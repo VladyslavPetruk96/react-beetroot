@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import firebase from 'firebase';
-import { Button, Grid, TextField, Paper, Container } from '@material-ui/core';
 import style from './StarterPage.module.css';
 
 

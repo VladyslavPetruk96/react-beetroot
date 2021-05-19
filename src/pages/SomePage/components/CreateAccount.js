@@ -88,6 +88,7 @@ class CreateAccount extends Component {
                             alignItems="center"
                             style={{paddingTop: '150px'}}
                         >
+                            <h2>SIGN UP</h2>
                             <Grid item xs={12}>
                                 <TextField 
                                     type='text'

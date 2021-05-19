@@ -3,10 +3,6 @@ import firebase from 'firebase';
 import { Button, Grid, TextField } from '@material-ui/core';
 import MainPage from '../MainPage/MainPage';
 import { Link } from 'react-router-dom';
-
-
-
-
 // const firebaseConfig = {
 //     apiKey: "AIzaSyAVUi10vvawbIYVwtCsGeRwnKLt8xfoEpg",
 //     authDomain: "maintest-firebase.firebaseapp.com",
@@ -77,6 +73,7 @@ class SignIn extends Component {
                             alignItems="center"
                             style={{paddingTop: '150px'}}
                         >
+                            <h2>SIGN IN</h2>
                             <Grid item xs={12}>
                                 <TextField 
                                     type='text'
