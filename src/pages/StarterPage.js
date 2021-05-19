@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import firebase from 'firebase';
+import { Button, Grid, TextField, Paper, Container } from '@material-ui/core';
+import style from './StarterPage.module.css';
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyAVUi10vvawbIYVwtCsGeRwnKLt8xfoEpg",
@@ -18,9 +21,13 @@ firebase.initializeApp(firebaseConfig);
 function StarterPage() {
   return (
     <>
-      <h2>Для входа на сайт вам необходимо авторизироваться</h2>
-      <Link to="/createaccount">Создать учетную запись</Link>
-      <Link to="/signin">Войти</Link>
+      <div className={style.all}>
+        <h2 className={style.h2}>Для входа на сайт вам необходимо авторизороваться</h2>
+        <div className={style.link}>
+          <Link className={style.link1} to="/createaccount">Sign Up</Link>
+          <Link className={style.link2} to="/signin">Sign In</Link>
+        </div>     
+      </div>     
     </>
   );
 }

@@ -1,0 +1,35 @@
+.all {
+    width: 350px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid rgb(14, 92, 122);
+    background-color: rgb(181, 228, 247);
+    margin: 100px auto;
+}
+.h2 {
+    margin-top: 30px;
+    font-size: 25px;
+    color: rgb(45, 5, 61);
+}
+.link {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+}
+.link1 {
+    background-color: rgb(96, 94, 221);
+    padding: 7px 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(224, 223, 223);
+}
+
+.link2 {
+    background-color: rgb(25, 124, 91);
+    padding: 7px 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(224, 223, 223);
+}
