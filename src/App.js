@@ -81,7 +81,7 @@ class App extends Component {
                                 placeholder='enter value'
                                 onChange={this.handleChange} 
                             />
-                            <input 
+                            <Button 
                                 type='submit'
                                 onClick={this.sendData} 
                             />
@@ -102,7 +102,7 @@ class App extends Component {
                         placeholder='password' 
                         onChange={this.handleChange}
                     />
-                    <input 
+                    <Button 
                         type='submit'
                         onClick={this.createAccount} 
                     />

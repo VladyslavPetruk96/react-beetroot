@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import firebase from 'firebase';
 import { Button, Grid, TextField } from '@material-ui/core';
+import MainPage from '../MainPage/MainPage';
+import { Link } from 'react-router-dom';
+
+
 
 
 // const firebaseConfig = {
@@ -15,7 +19,7 @@ import { Button, Grid, TextField } from '@material-ui/core';
   
 //   firebase.initializeApp(firebaseConfig);
 
-class CreateAccount extends Component {
+class SignIn extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -41,9 +45,11 @@ class CreateAccount extends Component {
         })
     };
 
-    createAccount = () => {
-        const { email, password } =this.state;
-        firebase.auth().createUserWithEmailAndPassword(email, password)
+    signIn = () => {
+        const { email, password } = this.state;
+        firebase.auth().signInWithEmailAndPassword(email, password)
+        .then( () => 
+            this.setState({hasAccount : true}))
         .catch(error => alert(error));
     }
 
@@ -60,24 +66,7 @@ class CreateAccount extends Component {
                 {
                     hasAccount ?
                     (
-                        <div>
-                            <TextField  
-                                type="text"
-                                id='key'
-                                placeholder='enter key'
-                                onChange={this.handleChange} 
-                            />
-                            <TextField 
-                                type="text"
-                                id='value' 
-                                placeholder='enter value'
-                                onChange={this.handleChange} 
-                            />
-                            <Button 
-                                type='submit'
-                                onClick={this.sendData}
-                            >Submitt</Button>
-                        </div>
+                    < MainPage href="/mainpage" />
                     )
                     :
                     (
@@ -107,7 +96,7 @@ class CreateAccount extends Component {
                             <Grid item xs={12}>
                                 <Button 
                                     type='submit'
-                                    onClick={this.createAccount} 
+                                    onClick={this.signIn} 
                                 >Submit</Button>
                             </Grid>
                 </Grid>
@@ -120,4 +109,4 @@ class CreateAccount extends Component {
 
 }
 
-export default CreateAccount
+export default SignIn
