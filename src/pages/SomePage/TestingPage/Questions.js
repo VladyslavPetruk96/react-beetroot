@@ -9,8 +9,8 @@ class Questions extends Component{
             checked: false
         }
     }
-    checkQuestions(ev) {
-        ev.preventDefault();
+    checkQuestions(e) {
+        e.preventDefault();
         this.setState({checked: true});
     }
 
@@ -22,8 +22,8 @@ class Questions extends Component{
             let variants = el.variants.map(function(e,i) {
                j++; 
                 return <div className='row'>
-                    <input type="radio" id={'id'+j} />
-                    <label for={'id'+j}>{e.title}</label>
+                    <input type="checkbox" id={'id'+j} />
+                    <label>{e.title}</label>
                 </div>
             })
             let n =0;
