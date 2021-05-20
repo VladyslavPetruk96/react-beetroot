@@ -47,6 +47,7 @@ class SignIn extends Component {
         .then( () => 
             this.setState({hasAccount : true}))
         .catch(error => alert(error));
+        console.log(email, password);
     }
 
     sendData = () => {

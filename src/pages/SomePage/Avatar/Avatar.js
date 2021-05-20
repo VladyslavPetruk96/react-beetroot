@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from './Avatar.module.css';
+import SignIn from '../components/SignIn';
 
 export class Avatar extends Component {
     render() {
