@@ -26,7 +26,6 @@ class Questions extends Component{
                     <label>{e.title}</label>
                 </div>
             })
-            let n =0;
             return <div>
                 <hr />
                 <h2 className={style.h3}>{el.title}</h2>

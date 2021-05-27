@@ -2,19 +2,6 @@ import React, { Component } from 'react';
 import firebase from 'firebase';
 import { Button, Grid, TextField } from '@material-ui/core';
 
-
-// const firebaseConfig = {
-//     apiKey: "AIzaSyAVUi10vvawbIYVwtCsGeRwnKLt8xfoEpg",
-//     authDomain: "maintest-firebase.firebaseapp.com",
-//     databaseURL: "https://maintest-firebase-default-rtdb.firebaseio.com",
-//     projectId: "maintest-firebase",
-//     storageBucket: "maintest-firebase.appspot.com",
-//     messagingSenderId: "682906644852",
-//     appId: "1:682906644852:web:44028260df4f3c9259fc21"
-//   }
-  
-//   firebase.initializeApp(firebaseConfig);
-
 class CreateAccount extends Component {
     constructor(props) {
         super(props);
@@ -53,8 +40,7 @@ class CreateAccount extends Component {
         db.ref(key).push(value);    }
 
     render () {
-        const { hasAccount, name } = this.state;
-        // console.log(name);
+        const { hasAccount } = this.state;
         return (
             <div>
                 {

@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
-import s from './MainPage.module.css';
-import Navlist from '../components/NavList';
+import style from './MainPage.module.css';
+import Navlist from '../../nav/NavList';
 
 class MainPage extends Component {
   render() {
     return (
       <>
         <Navlist />
-        <div className={s.main}>
-          <div className={s.first}>
+        <div className={style.main}>
+          <div className={style.first}>
             <h2>Тестирования знаний</h2>
             <p>
               На этой странице вы можете протестировать свои знания JavaScript
             </p>
           </div>
-          <div className={s.second}>
+          <div className={style.second}>
             <div>
               <h2>Язык JavaScript</h2>
               <p>Только сам JavaScript, без браузерных и иных расширений</p>
@@ -23,7 +23,7 @@ class MainPage extends Component {
               <a href="/testing">Пройти тестирования</a>
             </button>
           </div>
-          <div className={s.third}>
+          <div className={style.third}>
             <h2>Пояснения:</h2>
             <ul>
               <li>Тесты предполагают современные браузеры.</li>
