@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import style from './MainPage.module.css';
-import Navlist from '../../nav/NavList';
+import Navlist from '../../shared/components/nav/NavList';
 
 class MainPage extends Component {
   render() {
